@@ -41,7 +41,7 @@ https.createServer(options, function (request, response) {
     response.setHeader('Content-Type', 'text/css');
     fs.createReadStream(filePath).pipe(response);
 
-}).listen(port, host);
+}).listen(port);
 
 console.log('listen');
 console.log(`Use https://${host}:${port}/css/*.css !`);
